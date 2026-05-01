@@ -338,7 +338,7 @@ export default function Home() {
             >
               <div className="absolute -inset-4 bg-gradient-to-br from-green-400/20 to-blue-600/20 rounded-xl transform rotate-3 transition-all duration-1000"></div>
               <Image
-                src="/images/affe6.jpeg"
+                src="/images/affe16.png"
                 alt="AFFE team"
                 width={600}
                 height={400}

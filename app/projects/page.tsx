@@ -56,7 +56,7 @@ export default function Projects() {
       status: t("status_active"),
     },
     {
-      image: "/images/affe4.jpeg",
+      image: "/images/affe17.png",
       alt: "AFFE health action",
       category: { label: "Health", color: "blue" },
       title: t("project_cash_title"),
@@ -157,7 +157,7 @@ export default function Projects() {
               }`}>
               <div className="absolute -inset-4 bg-gradient-to-br from-green-400/20 to-blue-600/20 rounded-xl transform rotate-3 transition-all duration-1000"></div>
               <Image
-                src="/images/affe.jpeg"
+                src="/images/affe14.jpeg"
                 alt="AFFE protection and empowerment"
                 width={600}
                 height={400}

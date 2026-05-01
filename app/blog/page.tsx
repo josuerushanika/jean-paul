@@ -53,7 +53,7 @@ export default function Blog() {
       dateKey: "blog_innovation_date",
       readTimeKey: "blog_innovation_read_time",
       categoryKey: "category_innovation",
-      image: "/images/affe15.jpeg",
+      image: "/images/affe15.png",
     },
   ];
 
