@@ -1,0 +1,4 @@
+Contact: mailto:info@b4d-biochar.africa
+Policy: https://b4d-biochar.africa/
+Preferred-Languages: en
+Canonical: https://b4d-biochar.africa/.well-known/security.txt

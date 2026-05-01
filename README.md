@@ -1,1 +1,1 @@
-# jean-paul
+# B4D Biochar logo
