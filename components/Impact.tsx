@@ -110,10 +110,10 @@ export default function Impact() {
         <section
             ref={impactRef}
             className="py-24 bg-cover bg-center relative overflow-hidden"
-            style={{ backgroundImage: "url('/images/affe18.png')" }}
+            style={{ backgroundImage: "url('/images/affe5.jpeg')" }}
         >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black/50"></div>
+            {/* Dark overlay for better readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/60 to-black/75"></div>
 
             <div className="container mx-auto px-4 relative z-10">
                 {/* Header */}

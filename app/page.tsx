@@ -66,8 +66,8 @@ export default function Home() {
     "/images/affe13.jpeg",
     "/images/affe14.jpeg",
     "/images/affe15.jpeg",
-    "/images/affe16.jpeg",
-    "/images/affe17.jpeg",
+    "/images/affe16.png",
+    "/images/affe17.png",
     "/images/affe18.png",
   ];
 
