@@ -40,8 +40,8 @@ export default function Navbar() {
           <Link href="/" className="flex-shrink-0 group">
             <div className="relative overflow-hidden rounded-lg p-2 transition-all duration-300 group-hover:bg-muted/50">
               <Image
-                src="/logobiochar.png"
-                alt="B4D - Biochar for Decarbonization"
+                src="/affe_logo.jpeg"
+                alt="AFFE"
                 width={140}
                 height={48}
                 className="h-12 w-auto transition-transform duration-300 group-hover:scale-105"

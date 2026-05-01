@@ -48,8 +48,8 @@ export default function LoadingScreen() {
         {/* Logo */}
         <div className="mb-8 animate-pulse">
           <Image
-            src="/logobiochar.png"
-            alt="B4D - Biochar for Decarbonization"
+            src="/affe_logo.jpeg"
+            alt="AFFE"
             width={200}
             height={80}
             className="mx-auto"

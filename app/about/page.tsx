@@ -13,12 +13,11 @@ import {
   Shield,
   Users,
   Sparkles,
-  Leaf,
-  Zap,
-  Wheat,
-  Cog,
-  Sprout,
-  BookOpen
+  BookOpen,
+  HeartPulse,
+  HandHeart,
+  Megaphone,
+  Sprout
 } from "lucide-react"
 
 // Animation hook for intersection observer
@@ -65,7 +64,7 @@ export default function About() {
       <section
         ref={heroRef}
         className="relative py-20 bg-cover bg-center bg-no-repeat overflow-hidden"
-        style={{ backgroundImage: "url('/images/background.jpeg')" }}
+        style={{ backgroundImage: "url('/images/affe10.jpeg')" }}
       >
         <div className="absolute inset-0 bg-black/40" />
 
@@ -140,8 +139,8 @@ export default function About() {
               <div className={`absolute inset-0 bg-gradient-to-br from-green-400/20 to-blue-600/20 rounded-xl transform transition-all duration-1000 ${storyVisible ? 'rotate-3 scale-100' : 'rotate-0 scale-90'
                 }`}></div>
               <Image
-                src="/images/team-photo.jpg"
-                alt="B4D Team Leadership"
+                src="/images/affe11.jpeg"
+                alt="AFFE community leadership"
                 width={600}
                 height={400}
                 className="relative rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 hover:-rotate-1 transition-all duration-500 filter brightness-90 hover:brightness-100 group"
@@ -271,10 +270,10 @@ export default function About() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              { key: "biochar", Icon: Leaf },
-              { key: "energy", Icon: Zap },
-              { key: "agriculture", Icon: Wheat },
-              { key: "innovation", Icon: Cog },
+              { key: "biochar", Icon: Shield },
+              { key: "energy", Icon: HeartPulse },
+              { key: "agriculture", Icon: HandHeart },
+              { key: "innovation", Icon: Megaphone },
             ].map((obj, index) => {
               const colors: Record<string, string> = {
                 biochar: "green",

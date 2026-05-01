@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color tokens to match B4D biochar brand with glassmorphism effects */
+  /* Color tokens for AFFE brand presentation with glassmorphism effects */
   --background: oklch(1 0 0); /* Pure white background */
   --foreground: oklch(0.3 0 0); /* Dark gray for text (#374151) */
   --card: oklch(1 0.02 0 / 0.8); /* Glassmorphism card with transparency */

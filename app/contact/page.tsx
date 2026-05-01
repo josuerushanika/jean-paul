@@ -76,9 +76,19 @@ export default function Contact() {
       color: "blue",
       title: t("contact.phone.title"),
       content: (
-        <a href="tel:+243816055692" className="hover:text-blue-600 transition-colors">
-          +243 816 055 692
-        </a>
+        <span>
+          <a href="tel:+243842565659" className="hover:text-blue-600 transition-colors">
+            +243 842 565 659
+          </a>
+          <br />
+          <a href="tel:+243811496487" className="hover:text-blue-600 transition-colors">
+            +243 811 496 487
+          </a>
+          <br />
+          <a href="tel:+243974512343" className="hover:text-blue-600 transition-colors">
+            +243 974 512 343
+          </a>
+        </span>
       ),
     },
     {
@@ -87,10 +97,12 @@ export default function Contact() {
       title: t("contact.email.title"),
       content: (
         <a
-          href="mailto:info@b4d-biochar.africa"
+          href="https://wa.me/243811496487"
           className="hover:text-purple-600 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          info@b4d-biochar.africa
+          +243 811 496 487
         </a>
       ),
     },
@@ -104,7 +116,7 @@ export default function Contact() {
       <section
         ref={heroRef}
         className="relative py-20 bg-cover bg-center bg-no-repeat overflow-hidden"
-        style={{ backgroundImage: "url('/images/background.jpeg')" }}
+        style={{ backgroundImage: "url('/images/affe17.jpeg')" }}
       >
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 text-center max-w-4xl">

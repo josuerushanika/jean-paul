@@ -32,7 +32,7 @@ export default function Blog() {
       dateKey: "blog_biochar_date",
       readTimeKey: "blog_biochar_read_time",
       categoryKey: "category_science",
-      image: "/images/biochar-production.jpg",
+      image: "/images/affe13.jpeg",
       featured: true,
     },
     {
@@ -43,7 +43,7 @@ export default function Blog() {
       dateKey: "blog_modern_agriculture_date",
       readTimeKey: "blog_modern_agriculture_read_time",
       categoryKey: "category_agriculture",
-      image: "/images/team-photo.jpg",
+      image: "/images/affe14.jpeg",
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ export default function Blog() {
       dateKey: "blog_innovation_date",
       readTimeKey: "blog_innovation_read_time",
       categoryKey: "category_innovation",
-      image: "/images/tithonia-production.jpg",
+      image: "/images/affe15.jpeg",
     },
   ];
 
@@ -74,7 +74,7 @@ export default function Blog() {
       {/* Hero Section */}
       <section
         className="relative py-20 bg-cover bg-center bg-no-repeat overflow-hidden"
-        style={{ backgroundImage: "url('/images/background.jpeg')" }}
+        style={{ backgroundImage: "url('/images/affe16.jpeg')" }}
       >
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 text-center max-w-4xl">

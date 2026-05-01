@@ -42,55 +42,55 @@ export default function Projects() {
   const [ctaRef, ctaVisible] = useScrollAnimation(0.1)
 
   const featuredStats = [
-    { label: t("Carbon Sequestered"), value: "4000 tons CO₂", color: "text-green-600" },
+    { label: t("Carbon Sequestered"), value: "4000+", color: "text-green-600" },
     { label: t("Families Impacted"), value: "1500+", color: "text-blue-600" },
   ]
 
   const projects = [
     {
-      image: "/images/uku.jpg",
-      alt: "Bamboo Shimbala regeneration project",
-      category: { label: "Biomass Conversion", color: "green" },
+      image: "/images/affe3.jpeg",
+      alt: "AFFE education action",
+      category: { label: "Education", color: "green" },
       title: t("project_bamboo_title"),
       description: t("project_bamboo_desc"),
       status: t("status_active"),
     },
     {
-      image: "/images/moringa.jpg",
-      alt: "Agroforestry Project",
-      category: { label: "🌱 Agroforestry", color: "blue" },
+      image: "/images/affe4.jpeg",
+      alt: "AFFE health action",
+      category: { label: "Health", color: "blue" },
       title: t("project_cash_title"),
       description: t("project_cash_desc"),
       status: t("status_pilot"),
     },
     {
-      image: "/images/maize.jpg",
-      alt: "Maize and Soybean cultivation",
-      category: { label: "Agriculture / Food Security", color: "amber" },
+      image: "/images/affe5.jpeg",
+      alt: "AFFE protection action",
+      category: { label: "Protection", color: "amber" },
       title: t("project_maize_title"),
       description: t("project_maize_desc"),
       status: t("status_development"),
     },
     {
-      image: "/images/biochar-hands.jpg",
-      alt: "Soil Restoration Program",
-      category: { label: "Agriculture", color: "purple" },
+      image: "/images/affe6.jpeg",
+      alt: "AFFE community resilience action",
+      category: { label: "Resilience", color: "purple" },
       title: t("project_soil_title"),
       description: t("project_soil_desc"),
       status: t("status_active"),
     },
     {
-      image: "/images/biochar-container.jpg",
-      alt: "Water Purification Systems",
-      category: { label: "Water Treatment", color: "cyan" },
+      image: "/images/affe7.jpeg",
+      alt: "AFFE food security action",
+      category: { label: "Food Security", color: "cyan" },
       title: t("project_water_title"),
       description: t("project_water_desc"),
       status: t("status_pilot"),
     },
     {
-      image: "/images/team-photo.jpg",
-      alt: "Community Training Program",
-      category: { label: "Education", color: "rose" },
+      image: "/images/affe8.jpeg",
+      alt: "AFFE environment action",
+      category: { label: "Environment", color: "rose" },
       title: t("project_training_title"),
       description: t("project_training_desc"),
       status: t("status_ongoing"),
@@ -115,7 +115,7 @@ export default function Projects() {
       <section
         ref={heroRef}
         className="relative py-20 bg-cover bg-center overflow-hidden"
-        style={{ backgroundImage: "url('/images/background.jpeg')" }}
+        style={{ backgroundImage: "url('/images/affe12.jpeg')" }}
       >
         {/* Dark overlay behind the text */}
         <div className="absolute inset-0 bg-black/50 z-0 pointer-events-none" />
@@ -157,8 +157,8 @@ export default function Projects() {
               }`}>
               <div className="absolute -inset-4 bg-gradient-to-br from-green-400/20 to-blue-600/20 rounded-xl transform rotate-3 transition-all duration-1000"></div>
               <Image
-                src="/images/hero-biochar.jpg"
-                alt="Community Biochar Production"
+                src="/images/affe.jpeg"
+                alt="AFFE protection and empowerment"
                 width={600}
                 height={400}
                 className="relative rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500"
@@ -322,7 +322,7 @@ export default function Projects() {
             {/* Video Container */}
             <div className="relative aspect-video">
               <video
-                src="/images/vdeo.mp4"
+                src="/images/Video_affe19.mp4"
                 controls
                 autoPlay
                 className="w-full h-full object-contain"

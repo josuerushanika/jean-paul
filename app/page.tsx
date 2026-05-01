@@ -7,7 +7,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Footer from "@/components/Footer"
 import Impact from "@/components/Impact"
-import { Flame, Lightbulb, Wheat, Zap, Shield, Users, Eye } from "lucide-react"
+import { BookOpen, HeartPulse, Shield, Users, Eye, HandHeart, Leaf } from "lucide-react"
 
 // Animation hook for intersection observer
 const useScrollAnimation = (threshold = 0.1) => {
@@ -44,10 +44,10 @@ export default function Home() {
   const [ctaRef, ctaVisible] = useScrollAnimation(0.1)
 
   const images = [
-    "/images/hero-biochar.jpg",
-    "/images/Bamboo living community.jpg",
-    "/images/Producing biochar from Tithonia.jpg",
-    "/images/Biochar3.jpg",
+    "/images/affe.jpeg",
+    "/images/affe3.jpeg",
+    "/images/affe4.jpeg",
+    "/images/affe5.jpeg",
   ]
 
   const [current, setCurrent] = useState(0);
@@ -77,7 +77,7 @@ export default function Home() {
             >
               <Image
                 src={src}
-                alt="B4D Biochar Production"
+                alt="AFFE community action"
                 fill
                 className="object-cover"
                 priority={index === 0}
@@ -130,18 +130,13 @@ export default function Home() {
                 </button>
               </Link>
 
-              <a
-                href="https://forms.gle/XbiHspoKb7S9SshC8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto max-w-xs sm:max-w-none"
-              >
+              <Link href="/contact" className="w-full sm:w-auto max-w-xs sm:max-w-none">
                 <button className="w-full bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg text-sm sm:text-base lg:text-lg font-semibold transition-all duration-300 border-2 border-green-600 hover:border-green-700 hover:scale-105 hover:shadow-xl leading-tight">
                   <span className="block sm:inline">
                     {t("prepurchase")}
                   </span>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -170,10 +165,10 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { key: "biochar", Icon: Flame, color: "green" },
-              { key: "energy", Icon: Zap, color: "blue" },
-              { key: "agriculture", Icon: Wheat, color: "amber" },
-              { key: "innovation", Icon: Lightbulb, color: "purple" }
+              { key: "biochar", Icon: BookOpen, color: "green" },
+              { key: "energy", Icon: HeartPulse, color: "blue" },
+              { key: "agriculture", Icon: Shield, color: "amber" },
+              { key: "innovation", Icon: HandHeart, color: "purple" }
             ].map((service, index) => (
               <div
                 key={service.key}
@@ -218,7 +213,7 @@ export default function Home() {
               <div className={`grid sm:grid-cols-2 gap-6 mb-8 transition-all duration-800 delay-600 ${aboutVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-6'
                 }`}>
                 {[
-                  { key: "innovation", Icon: Lightbulb },
+                  { key: "innovation", Icon: HandHeart },
                   { key: "responsibility", Icon: Shield },
                   { key: "inclusion", Icon: Users },
                   { key: "transparency", Icon: Eye }
@@ -253,8 +248,8 @@ export default function Home() {
               }`}>
               <div className="absolute -inset-4 bg-gradient-to-br from-green-400/20 to-blue-600/20 rounded-xl transform rotate-3 transition-all duration-1000"></div>
               <Image
-                src="/images/team-photo.jpg"
-                alt="B4D Team"
+                src="/images/affe6.jpeg"
+                alt="AFFE team"
                 width={600}
                 height={400}
                 className="relative rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500"
@@ -279,18 +274,18 @@ export default function Home() {
             {[
               {
                 key: "materials",
-                image: "/images/bamboo-structure.jpg",
-                alt: "Raw Biomass Materials"
+                image: "/images/affe7.jpeg",
+                alt: "Community needs assessment"
               },
               {
                 key: "pyrolysis",
-                image: "/images/biochar-production.jpg",
-                alt: "Biochar Production Process"
+                image: "/images/affe8.jpeg",
+                alt: "AFFE community support"
               },
               {
                 key: "quality",
-                image: "/images/biochar-finished.jpg",
-                alt: "Finished Biochar Product"
+                image: "/images/affe9.jpeg",
+                alt: "Community empowerment"
               }
             ].map((step, index) => (
               <div

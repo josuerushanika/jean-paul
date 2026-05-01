@@ -110,7 +110,7 @@ export default function Impact() {
         <section
             ref={impactRef}
             className="py-24 bg-cover bg-center relative overflow-hidden"
-            style={{ backgroundImage: "url('/images/biocharback.jpg')" }}
+            style={{ backgroundImage: "url('/images/affe18.jpeg')" }}
         >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/50"></div>

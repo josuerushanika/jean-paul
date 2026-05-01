@@ -12,31 +12,22 @@ interface TranslationContextType {
 
 const TranslationContext = createContext<TranslationContextType | undefined>(undefined)
 
-// Translation data
+const missionFr =
+  "Amener la femme à développer des compétences pour se prendre en charge, contribuer au développement socio-économique de son milieu et offrir un avenir aux enfants les plus défavorisés en leur donnant accès à une instruction de qualité."
+
+const missionEn =
+  "Help women develop skills to become self-reliant, contribute to the socio-economic development of their communities, and give the most disadvantaged children access to quality education and a better future."
+
 const translations = {
   en: {
-
-    //follow us 
     "followUs": "Follow Us",
-
-    //message 
-
     "thank_you_title": "Thank you for your message!",
     "thank_you_subtitle": "We'll get back to you as soon as possible.",
-    //address
-
-
-    "line1": "Plot No. 38, Dominique Avenue",
-    "line2": "Kashamata Quarter, Annex Commune",
-    "line3": "City of Lubumbashi",
-    "line4": "Haut-Katanga Province, DRC",
-
-
-
-    //prepurchase
-    "prepurchase": "Pre-purchase Carbon Removal Credits",
-    //Contact
-
+    "line1": "Actions en Faveur de la Femme et de l'Enfant (AFFE)",
+    "line2": "Democratic Republic of Congo",
+    "line3": "Phone: +243 842 565 659",
+    "line4": "+243 811 496 487 / +243 974 512 343",
+    "prepurchase": "Support Our Actions",
     "contacted.hour.monday.label": "Monday - Friday",
     "contacted.hour.monday.value": "8:00 AM - 5:00 PM",
     "contacted.hour.saturday.label": "Saturday",
@@ -47,249 +38,147 @@ const translations = {
     "contacted.hour.emergency.value": "Available 24/7",
     "contacted.title": "Opening Hours",
 
-
-
-    //whatsapp.startChat
-
-    "whatsapp.startChat": "Chat with us",
-    "whatsapp.chooseOption": "Select an option",
-    //Blog
-
-    "blog_heading": "Our Blog & Insights",
-    "blog_description": "Stay updated with the latest developments in biochar technology, sustainable agriculture, and environmental impact stories from our projects across Central Africa.",
-    "blog_categories_heading": "Blog Categories",
-    "category_all": "All Categories",
-    "category_science": "Science & Research",
-    "category_agriculture": "Agriculture",
-    "category_innovation": "Innovation",
-    "category_sustainability": "Sustainability",
-    "category_water": "Water Treatment",
-    "category_climate": "Climate Action",
-    "featured_article": "Featured Article",
-    "read_full_article": "Read Full Article",
-    "recent_articles": "Recent Articles",
-    "read_more": "Read More",
-    "close_article": "Close article",
-    "published_on": "Published on",
-    "back_to_articles": "Back to Articles",
-    "blog_biochar_title": "Understanding Biochar: The Carbon-Rich Solution for Sustainable Agriculture",
-    "blog_biochar_excerpt": "Discover how biochar is revolutionizing farming practices and helping combat climate change through innovative soil enhancement techniques.",
-    "blog_biochar_content": "Biochar is a highly stable, carbon-rich material produced through pyrolysis. It improves soil fertility, retains water, supports beneficial microorganisms, and sequesters carbon for long-term climate benefits. Farmers are adopting biochar as part of regenerative agriculture worldwide.",
-    "blog_modern_agriculture_title": "Modern Agriculture: Feeding the World Sustainably",
-    "blog_modern_agriculture_excerpt": "Exploring how innovative farming techniques are meeting global food demands while protecting our environment for future generations.",
-    "blog_modern_agriculture_content": "Modern agriculture focuses on maximizing crop yields while maintaining soil health. Techniques like crop rotation, intercropping, precision irrigation, and sustainable practices enhance productivity and environmental stewardship for long-term food security.",
-    "blog_innovation_title": "Innovation in Farming: Technology Meets Tradition",
-    "blog_innovation_excerpt": "How cutting-edge technology is transforming traditional farming methods to create more efficient and sustainable agricultural practices.",
-    "blog_innovation_content": "Innovation in agriculture integrates advanced crop varieties, machinery, and digital tools. This enhances efficiency, resilience, and sustainability while reducing environmental impact, ensuring farms can thrive under climate and market challenges.",
-
-
-
-    //Our impact 
-    "impact_heading": "Our Impact",
-    "impact_description": "Measuring our success through tangible environmental and social outcomes.",
-    "impact_carbon": "Tons of Carbon Reduced",
-    "impact_farmers": "Farmers Benefited",
-    "impact_hectares": "Hectares Improved",
-    "impact_projects": "Active Projects",
-
-    //Partner with Our Projects
-    "partner_heading": "Partner with Our Projects",
-    "partner_description": "Join us in scaling sustainable biochar solutions across Central Africa. Together, we can create lasting environmental and social impact.",
-    "partner_button": "Become a Partner",
-    //Project Portfolio
-    "status_active": "Active",
-    "status_pilot": "Pilot",
-    "status_development": "Development",
-    "status_ongoing": "Ongoing",
-
-    "project_bamboo_title": "Bamboo Shimbala regeneration project",
-    "project_bamboo_desc": "We protect the Miombo forests by regenerating bamboo shimbala, and producing biochar and eco briquettes as alternative to charcoal and firewood.",
-
-    "project_cash_title": "Project to plant cash crops",
-    "project_cash_desc": "We plant cash crops such as Moringa Oleifera, Robusta coffee, avocado, cacao, and palm oil.",
-
-    "project_maize_title": "Maize and Soybean cultivation",
-    "project_maize_desc": "We are carrying out a project in the village of Mwawa, located in Haut-Katanga Province in the Democratic Republic of Congo (DRC).",
-
-    "project_soil_title": "Soil Restoration Program",
-    "project_soil_desc": "We apply biochar on a large scale to degraded agricultural lands, enhancing soil fertility and crop yields while capturing and storing carbon.",
-
-    "project_water_title": "Water Purification Systems",
-    "project_water_desc": "We implement biochar-based water filtration systems to provide clean drinking water to rural communities while making use of our biochar production.",
-
-    "project_training_title": "Community Training Program",
-    "project_training_desc": "We provide comprehensive training programs that teach local communities biochar production techniques and sustainable agriculture practices.",
-
-
-
-    // Navigation
     "nav.home": "Home",
     "nav.about": "About",
-    "nav.projects": "Our Projects",
+    "nav.projects": "Intervention Areas",
     "nav.contact": "Contact",
-    "nav.blog": "Blog",
+    "nav.blog": "News",
 
-    // WhatsApp Chat
     "whatsapp.chat": "Chat with us",
-    "chooseOption": "Please choose a  option",
-    "learnMore": "Hello I want to learn more about your projects",
-    "scheduleMeeting": "Hello I want to schedule a meeting with your team",
-    "support": "Hello I want to support your initiatives",
+    "whatsapp.startChat": "Chat with AFFE",
+    "whatsapp.chooseOption": "Choose a quick message",
+    "chooseOption": "Please choose an option",
+    "learnMore": "Hello, I would like to learn more about AFFE.",
+    "scheduleMeeting": "Hello, I would like to schedule a meeting with your team.",
+    "support": "Hello, I would like to support your actions.",
 
-
-    // Homepage Hero
-    "hero.title": "Biochar for",
-    "hero.subtitle": "Decarbonization",
-    "hero.description":
-      "Leading Central Africa's transition to sustainable agriculture and climate resilience through innovative biochar solutions",
-    "hero.projects": "Our Projects",
+    "hero.title": "Actions for",
+    "hero.subtitle": "Women and Children",
+    "hero.description": missionEn,
+    "hero.projects": "Our Areas",
     "hero.learn": "Learn More",
 
-    // Services Section
-    "services.title": "Our Core Services",
-    "services.description":
-      "Comprehensive solutions for sustainable agriculture, carbon sequestration, and renewable energy in the Democratic Republic of Congo",
-    "services.biochar.title": "Biochar Production",
-    "services.biochar.description":
-      "High-quality biochar for carbon sequestration, soil amendment, and water purification.",
-    "services.energy.title": "Renewable Energy",
-    "services.energy.description":
-      "Clean technology solutions tailored to rural energy needs and sustainable development.",
-    "services.agriculture.title": "Regenerative Agriculture",
-    "services.agriculture.description":
-      "Environmentally friendly agricultural practices promoting soil health and long-term productivity.",
-    "services.innovation.title": "Climate Innovation",
-    "services.innovation.description":
-      "Innovative technological solutions for climate resilience and environmental conservation.",
+    "services.title": "Our Core Actions",
+    "services.description": "AFFE works for the dignity, protection, education, health, and empowerment of women, children, and vulnerable communities.",
+    "services.biochar.title": "Education",
+    "services.biochar.description": "Access to quality education, literacy, schools, training centers, and learning support for vulnerable children and adults.",
+    "services.energy.title": "Health",
+    "services.energy.description": "Primary healthcare access, medical support, health center equipment, hygiene, sanitation, and disease prevention.",
+    "services.agriculture.title": "Protection",
+    "services.agriculture.description": "Protection of women, girls, boys, children in difficult situations, and people deprived of liberty.",
+    "services.innovation.title": "Community Empowerment",
+    "services.innovation.description": "Community mobilization, food security, income-generating activities, agriculture, and local resilience.",
 
-    // Blog dates
-    "blog_biochar_date": "August 28, 2025",
-    "blog_modern_agriculture_date": "August 28, 2025",
-    "blog_innovation_date": "August 28, 2025",
-
-    // Blog read times
-    "blog_biochar_read_time": "8 min read",
-    "blog_modern_agriculture_read_time": "6 min read",
-    "blog_innovation_read_time": "7 min read",
-
-    // About Section
-    "about.title": "About B4D Sarl",
-    "about.description":
-      "B4D Sarl is an innovative company positioned at the intersection of the bioeconomy, energy transition, and sustainable agriculture. Founded within a dynamic of climate resilience and ecological development, we promote integrated solutions for decarbonization, soil regeneration, and food security in the Democratic Republic of Congo.",
-    "about.values.innovation": "Innovation",
-    "about.values.responsibility": "Environmental Responsibility",
+    "about.title": "About AFFE",
+    "about.description": "Actions en Faveur de la Femme et de l'Enfant is a nonprofit organization committed to the dignity of women, the protection of children, access to essential services, and community development.",
+    "about.values.innovation": "Dignity",
+    "about.values.responsibility": "Protection",
     "about.values.inclusion": "Inclusion",
-    "about.values.transparency": "Transparency",
+    "about.values.transparency": "Community Action",
     "about.learn": "Learn More About Us",
-
-    // About Page Specific
-    "about.hero.subtitle":
-      "Pioneering sustainable solutions at the intersection of bioeconomy, energy transition, and regenerative agriculture in the Democratic Republic of Congo.",
-    "about.story.title": "Our Story",
-    "about.story.p1":
-      "B4D Sarl (Biochar for Decarbonization) is an innovative Limited Liability Company headquartered in Lubumbashi, Haut-Katanga Province, DRC. Founded within a dynamic of climate resilience and ecological development, we promote integrated solutions for decarbonization, soil regeneration, and food security.",
-    "about.story.p2":
-      "Our company operates at the intersection of the bioeconomy, energy transition, and sustainable agriculture, delivering innovative and sustainable solutions in the green economy, particularly in agriculture, reforestation, and energy.",
-    "about.legal.title": "Legal Status",
-    "about.legal.status": "Limited Liability Company (Sarl) — RCCM: 25/LSH/IM002548, IDNat: 05-S9502-N82149T",
-    "about.legal.headquarters": "Headquarters: Lubumbashi, Haut-Katanga Province, DRC",
+    "about.hero.subtitle": "A protective environment where women and children can realize their full potential in every aspect of life.",
+    "about.story.title": "Our Commitment",
+    "about.story.p1": "AFFE works to promote the dignity, rights, protection, and empowerment of women, children, and vulnerable communities.",
+    "about.story.p2": "The organization mobilizes communities for behavioral change in favor of women and girls while facilitating access to education, food, housing, healthcare, water, hygiene, and sanitation.",
+    "about.legal.title": "Organization",
+    "about.legal.status": "Nonprofit association: Actions en Faveur de la Femme et de l'Enfant (AFFE)",
+    "about.legal.headquarters": "Serving women, children, and vulnerable communities in the Democratic Republic of Congo.",
     "about.mission.title": "Our Mission",
-    "about.mission.description":
-      "To deliver innovative and sustainable solutions in the green economy, particularly in agriculture, reforestation, and energy, while promoting climate resilience and ecological development in Central Africa.",
+    "about.mission.description": missionEn,
     "about.vision.title": "Our Vision",
-    "about.vision.description":
-      "To become a leading company in regenerative agriculture and climate innovation in Central Africa, by creating an inclusive, sustainable economic model with strong environmental impact.",
-    "about.values.title": "Our Core Values",
-    "about.values.subtitle":
-      "These fundamental principles guide every aspect of our work and define our commitment to sustainable development.",
-    "about.values.innovation.desc":
-      "Continuously developing cutting-edge solutions for environmental challenges through research and technology.",
-    "about.values.responsibility.desc":
-      "Committed to protecting and restoring our planet through sustainable practices and carbon-negative solutions.",
-    "about.values.inclusion.desc":
-      "Building an inclusive economic model that benefits local communities and promotes social equity.",
-    "about.values.transparency.desc":
-      "Operating with complete openness in our processes, impact measurement, and stakeholder communications.",
-    "about.objectives.title": "Corporate Objectives",
-    "about.objectives.subtitle":
-      "Our comprehensive approach addresses multiple aspects of sustainable development and climate action.",
-    "about.objectives.biochar.title": "Biochar & Decarbonization",
-    "about.objectives.biochar.desc":
-      "Production and valorization of biochar as a solution for carbon sequestration, soil amendment, and water purification.",
-    "about.objectives.energy.title": "Renewable Energy",
-    "about.objectives.energy.desc":
-      "Development and promotion of clean technologies tailored to rural energy needs and sustainable development.",
-    "about.objectives.agriculture.title": "Regenerative Agriculture",
-    "about.objectives.agriculture.desc":
-      "Implementation of environmentally friendly agricultural practices that promote soil health and long-term productivity.",
-    "about.objectives.innovation.title": "Climate Innovation",
-    "about.objectives.innovation.desc":
-      "Design and deployment of innovative technological solutions for climate resilience and environmental conservation.",
-    "about.activities.title": "Others Activities",
-    "about.activities.agricultural.title": "Agricultural Operations",
-    "about.activities.agricultural.desc":
-      "Production, processing, distribution, and marketing of agricultural products using sustainable and regenerative practices, Sustainable crop production,  Agricultural product processing,  Distribution networks, Market development",
-    "about.activities.consulting.title": "Consulting Services",
-    "about.activities.consulting.desc":
-      "Consulting, evaluations, and audits of bankable projects related to sustainable agriculture and environmental conservation.",
+    "about.vision.description": "Work for a protective environment where women and children can realize their full potential in every aspect of their lives.",
+    "about.values.title": "Our Priorities",
+    "about.values.subtitle": "These commitments guide AFFE's action for women, children, and communities.",
+    "about.values.innovation.desc": "Defending dignity and promoting the rights of women and children.",
+    "about.values.responsibility.desc": "Protecting children and fighting abuse, sexual exploitation, forced marriage, begging, and other forms of vulnerability.",
+    "about.values.inclusion.desc": "Opening access to essential services for marginalized and vulnerable groups.",
+    "about.values.transparency.desc": "Mobilizing communities for lasting social change.",
+    "about.objectives.title": "Objectives",
+    "about.objectives.subtitle": "AFFE's objectives combine protection, access to basic services, and community transformation.",
+    "about.objectives.biochar.title": "Rights and Protection",
+    "about.objectives.biochar.desc": "Promote dignity, protect women and children, and defend their fundamental rights.",
+    "about.objectives.energy.title": "Basic Services",
+    "about.objectives.energy.desc": "Facilitate access to education, food, housing, community health, water, hygiene, and sanitation.",
+    "about.objectives.agriculture.title": "Fight Against Abuse",
+    "about.objectives.agriculture.desc": "Fight sexual abuse and exploitation, forced marriage of girls, begging, and child vulnerability.",
+    "about.objectives.innovation.title": "Behavior Change",
+    "about.objectives.innovation.desc": "Mobilize communities for behavioral change in favor of women and girls.",
+    "about.activities.title": "Intervention Domains",
+    "about.activities.agricultural.title": "Education and Health",
+    "about.activities.agricultural.desc": "Literacy, inclusive education, vocational training, school support, primary healthcare, medical evacuations, health center support, water, hygiene, and sanitation.",
+    "about.activities.consulting.title": "Protection, Agriculture, and Environment",
+    "about.activities.consulting.desc": "Protection from violence, resilience support, food security, farmer organization support, sustainable agriculture, biodiversity protection, waste management, and environmental advocacy.",
     "about.cta.title": "Join Our Mission",
-    "about.cta.description":
-      "Partner with us to create sustainable solutions for agriculture, energy, and climate resilience in Central Africa.",
+    "about.cta.description": "Partner with AFFE to protect women, support children, and strengthen vulnerable communities.",
     "about.cta.contact": "Contact Us",
-    "about.cta.projects": "View Our Projects",
+    "about.cta.projects": "View Our Areas",
 
-    // Process Section
-    "process.title": "Our Biochar Process",
-    "process.description":
-      "From raw biomass to high-quality biochar, our sustainable production process transforms agricultural waste into valuable carbon-negative solutions.",
-    "process.materials.title": "1. Raw Materials",
-    "process.materials.description":
-      "We source sustainable biomass including bamboo, agricultural residues, and organic waste materials.",
-    "process.pyrolysis.title": "2. Pyrolysis Process",
-    "process.pyrolysis.description":
-      "Our controlled pyrolysis process converts biomass into biochar while capturing and utilizing byproduct gases.",
-    "process.quality.title": "3. Quality Biochar",
-    "process.quality.description":
-      "The final product is high-quality biochar ready for soil amendment, carbon sequestration, and water filtration.",
+    "process.title": "How We Act",
+    "process.description": "AFFE acts through community-based programs that identify needs, strengthen capacities, and support lasting change.",
+    "process.materials.title": "1. Identify Needs",
+    "process.materials.description": "We listen to women, children, schools, health centers, and communities to understand urgent priorities.",
+    "process.pyrolysis.title": "2. Mobilize Support",
+    "process.pyrolysis.description": "We build partnerships, mobilize communities, and deliver practical support through local initiatives.",
+    "process.quality.title": "3. Strengthen Communities",
+    "process.quality.description": "We promote resilience, education, health, protection, sustainable agriculture, and environmental responsibility.",
 
-    // CTA Section
-    "cta.title": "Ready to Partner with Us?",
-    "cta.description":
-      "Join us in creating sustainable solutions for agriculture, energy, and climate resilience in Central Africa.",
+    "cta.title": "Ready to Support AFFE?",
+    "cta.description": "Together, we can protect dignity and create a better future for women and children.",
     "cta.contact": "Contact Us",
-    "cta.projects": "View Projects",
+    "cta.projects": "View Areas",
 
-    // Footer
-    "footer.description": "Leading Central Africa's transition to sustainable agriculture and climate resilience.",
+    "footer.description": "Actions for the dignity, protection, and empowerment of women and children.",
     "footer.contact": "Contact Info",
     "footer.links": "Quick Links",
-    "footer.copyright": "© 2024 B4D Sarl. All rights reserved.",
+    "footer.copyright": "© 2026 AFFE. All rights reserved.",
 
-    // Projects Page
-    "projects.title": "Our Projects",
-    "projects.subtitle":
-      "Transforming communities through innovative biochar solutions and sustainable development initiatives across Central Africa.",
-    "projects.featured.title": "Featured Project",
-    "projects.featured.name": "Community Biochar Production Hub",
-    "projects.featured.description":
-      "A comprehensive biochar production facility serving 15 rural communities, converting agricultural waste into valuable soil amendments while providing clean energy solutions.",
-    "projects.featured.impact": "Impact: 500+ farmers benefited, 2,000 tons CO2 sequestered annually",
-    "projects.featured.learn": "Learn More",
-    "projects.grid.title": "Project Portfolio",
+    "impact_heading": "Our Impact",
+    "impact_description": "Building stronger futures through education, health, protection, and community empowerment.",
+    "impact_carbon": "Women and Children Supported",
+    "impact_farmers": "Community Members Reached",
+    "impact_hectares": "Local Initiatives",
+    "impact_projects": "Intervention Areas",
+
+    "projects.title": "Our Intervention Areas",
+    "projects.subtitle": "AFFE works across education, health, protection, empowerment, sustainable agriculture, and environmental action.",
+    "projects.featured.title": "Featured Area",
+    "projects.featured.name": "Protection and Empowerment of Women and Children",
+    "projects.featured.description": "AFFE promotes dignity, protection from violence and exploitation, access to essential services, and the empowerment of vulnerable communities.",
+    "projects.grid.title": "Intervention Portfolio",
     "projects.impact.title": "Our Impact",
     "projects.impact.communities": "Communities Served",
-    "projects.impact.carbon": "CO2 Sequestered (tons/year)",
-    "projects.impact.farmers": "Farmers Benefited",
-    "projects.impact.biochar": "Biochar Produced (tons)",
+    "projects.impact.carbon": "People Reached",
+    "projects.impact.farmers": "Women Supported",
+    "projects.impact.biochar": "Actions Delivered",
+    "status_active": "Active",
+    "status_pilot": "Priority",
+    "status_development": "Developing",
+    "status_ongoing": "Ongoing",
+    "project_bamboo_title": "Education",
+    "project_bamboo_desc": "Fighting illiteracy, supporting schools, creating training centers, and opening access to education for vulnerable children and adults.",
+    "project_cash_title": "Health",
+    "project_cash_desc": "Supporting primary healthcare, evacuations for difficult medical cases, health centers, medical equipment, water, hygiene, and sanitation.",
+    "project_maize_title": "Protection",
+    "project_maize_desc": "Defending women, girls, boys, vulnerable children, and people deprived of liberty against violence, exploitation, and abuse.",
+    "project_soil_title": "Community Resilience",
+    "project_soil_desc": "Supporting communities affected by conflict, humanitarian crises, and natural disasters through emergency aid and basic infrastructure rehabilitation.",
+    "project_water_title": "Food Security and Agriculture",
+    "project_water_desc": "Developing food security strategies, nutrition initiatives, farmer support, agricultural inputs, income-generating activities, and product commercialization.",
+    "project_training_title": "Sustainable Environment",
+    "project_training_desc": "Protecting biodiversity, fighting deforestation and pollution, improving waste management, promoting hygiene, and supporting livestock initiatives.",
+    "partner_heading": "Partner with AFFE",
+    "partner_description": "Join us in expanding protection, education, health, and empowerment actions for women and children.",
+    "partner_button": "Become a Partner",
+    "Carbon Sequestered": "People Reached",
+    "Families Impacted": "Families Supported",
+    "Watch Video Result": "Watch Video",
 
-    // Contact Page
     "contact.title": "Contact Us",
-    "contact.subtitle":
-      "Ready to partner with us in creating sustainable solutions for Central Africa? Get in touch with our team.",
+    "contact.subtitle": "Get in touch with AFFE to support our actions or learn more about our work.",
     "contact.getInTouch": "Get in Touch",
-    "contact.office.title": "Office Address",
+    "contact.office.title": "Organization",
     "contact.phone.title": "Phone",
-    "contact.email.title": "Email",
+    "contact.email.title": "WhatsApp",
     "contact.website.title": "Website",
     "contact.form.title": "Send us a Message",
     "contact.form.firstName": "First Name",
@@ -304,13 +193,13 @@ const translations = {
     "contact.form.subject": "Subject",
     "contact.form.subject.placeholder": "Select a subject",
     "contact.form.subject.partnership": "Partnership Opportunities",
-    "contact.form.subject.biochar": "Biochar Products & Services",
-    "contact.form.subject.consulting": "Consulting Services",
-    "contact.form.subject.projects": "Project Collaboration",
-    "contact.form.subject.investment": "Investment Opportunities",
+    "contact.form.subject.biochar": "Education and Health",
+    "contact.form.subject.consulting": "Protection and Empowerment",
+    "contact.form.subject.projects": "Community Programs",
+    "contact.form.subject.investment": "Support and Donations",
     "contact.form.subject.other": "Other Inquiry",
     "contact.form.message": "Message",
-    "contact.form.message.placeholder": "Tell us about your project or inquiry...",
+    "contact.form.message.placeholder": "Tell us how you would like to support or contact AFFE...",
     "contact.form.send": "Send Message",
     "contact.hours.title": "Business Hours",
     "contact.hours.weekdays": "8:00 AM - 5:00 PM",
@@ -322,108 +211,65 @@ const translations = {
     "contact.hours.sunday.label": "Sunday",
     "contact.hours.emergency.label": "Emergency",
     "contact.cta.title": "Ready to Make an Impact?",
-    "contact.cta.description":
-      "Whether you're interested in our biochar products, consulting services, or partnership opportunities, we're here to help you achieve your sustainability goals.",
+    "contact.cta.description": "Whether you want to support women, children, education, health, protection, or community development, AFFE is ready to collaborate.",
     "contact.cta.schedule": "Schedule a Call",
     "contact.cta.brochure": "Download Brochure",
-    "contact.why.title": "Why Partner with B4D?",
-    "contact.why.subtitle":
-      "Join us in creating sustainable solutions that benefit both the environment and local communities.",
-    "contact.why.expertise": "Proven Expertise",
-    "contact.why.expertise.desc": "Years of experience in biochar production and sustainable agriculture solutions.",
-    "contact.why.impact": "Measurable Impact",
-    "contact.why.impact.desc":
-      "Track record of successful projects with quantifiable environmental and social benefits.",
-    "contact.why.local": "Local Knowledge",
-    "contact.why.local.desc": "Deep understanding of Central African agricultural challenges and community needs.",
+    "contact.why.title": "Why Partner with AFFE?",
+    "contact.why.subtitle": "Join us in actions that protect dignity and strengthen communities.",
+    "contact.why.expertise": "Community Commitment",
+    "contact.why.expertise.desc": "A mission rooted in women's empowerment, child protection, and access to essential services.",
+    "contact.why.impact": "Human Impact",
+    "contact.why.impact.desc": "Programs focused on education, health, resilience, and social protection.",
+    "contact.why.local": "Local Action",
+    "contact.why.local.desc": "Community mobilization for practical and lasting change.",
 
-    // Blog Page
-    "blog.title": "Blog & Insights",
-    "blog.subtitle":
-      "Stay updated with the latest developments in biochar technology, sustainable agriculture, and climate solutions.",
-    "blog.featured.title": "Featured Article",
-    "blog.categories.title": "Categories",
-    "blog.recent.title": "Recent Articles",
-    "blog.read": "Read More",
-    "blog.category.all": "All",
-    "blog.category.science": "Science",
-    "blog.category.agriculture": "Agriculture",
-    "blog.category.innovation": "Innovation",
-    "blog.category.sustainability": "Sustainability",
-    "blog.category.water": "Water Treatment",
-    "blog.category.climate": "Climate",
-
-    // Blog Post Translations
-    "blog.posts.1.title": "The Science Behind Biochar: How Pyrolysis Creates Carbon-Negative Solutions",
-    "blog.posts.1.excerpt":
-      "Discover the fascinating process of pyrolysis and how it transforms agricultural waste into valuable biochar that actively removes CO2 from the atmosphere.",
-    "blog.posts.1.author": "Dr. Jean-Baptiste Mukendi",
-    "blog.posts.1.date": "December 15, 2024",
-    "blog.posts.1.readTime": "8 min read",
-
-    "blog.posts.2.title": "Transforming Agriculture in the DRC: Success Stories from Rural Communities",
-    "blog.posts.2.excerpt":
-      "Learn how biochar application has improved crop yields and soil health across farming communities in Haut-Katanga Province.",
-    "blog.posts.2.author": "Marie Kabongo",
-    "blog.posts.2.date": "December 10, 2024",
-    "blog.posts.2.readTime": "6 min read",
-
-    "blog.posts.3.title": "From Waste to Wonder: Converting Tithonia Plants into Valuable Biochar",
-    "blog.posts.3.excerpt":
-      "How we're turning invasive Tithonia plants into a sustainable solution for soil improvement and carbon sequestration.",
-    "blog.posts.3.author": "Paul Mwamba",
-    "blog.posts.3.date": "December 5, 2024",
-    "blog.posts.3.readTime": "5 min read",
-
-    "blog.posts.4.title": "Bamboo Biochar: The Future of Sustainable Carbon Sequestration",
-    "blog.posts.4.excerpt":
-      "Exploring the potential of bamboo as a renewable feedstock for biochar production and its environmental benefits.",
-    "blog.posts.4.author": "Dr. Jean-Baptiste Mukendi",
-    "blog.posts.4.date": "November 28, 2024",
-    "blog.posts.4.readTime": "7 min read",
-
-    "blog.posts.5.title": "Water Purification with Biochar: Clean Solutions for Rural Communities",
-    "blog.posts.5.excerpt":
-      "How biochar-based filtration systems are providing clean drinking water while supporting local economies.",
-    "blog.posts.5.author": "Sarah Kalombo",
-    "blog.posts.5.date": "November 20, 2024",
-    "blog.posts.5.readTime": "4 min read",
-
-    "blog.posts.6.title": "Climate Action in Central Africa: B4D's Role in the Green Economy",
-    "blog.posts.6.excerpt":
-      "Understanding how biochar production contributes to climate resilience and sustainable development in the DRC.",
-    "blog.posts.6.author": "Marie Kabongo",
-    "blog.posts.6.date": "November 15, 2024",
-    "blog.posts.6.readTime": "9 min read",
-
-    // Newsletter and CTA Section Translations
-    "blog.newsletter.title": "Stay Updated",
-    "blog.newsletter.description":
-      "Subscribe to our newsletter for the latest insights on biochar technology, sustainability, and climate action.",
-    "blog.newsletter.placeholder": "Enter your email address",
-    "blog.newsletter.subscribe": "Subscribe",
-    "blog.newsletter.disclaimer": "No spam, unsubscribe at any time.",
-
-    "blog.cta.title": "Share Your Story",
-    "blog.cta.description":
-      "Have a biochar success story or research findings to share? We'd love to feature your work on our blog.",
-    "blog.cta.submit": "Submit Article",
-    "blog.cta.contact": "Contact Editorial Team",
-
-    // Loading Screen
-    "loading.title": "Loading B4D Solutions...",
-    "loading.subtitle": "Preparing sustainable biochar innovations for Central Africa",
-
-    //featuredStats
-    "Carbon Sequestered": "Carbon Sequestered",
-    "Families Impacted": "Farmers Benefited",
-    "Watch Video Result": "Watch Video Result",
-
+    "blog.title": "News",
+    "blog.subtitle": "Updates from AFFE's work with women, children, and communities.",
+    "blog_heading": "News & Insights",
+    "blog_description": "Stories and updates on education, health, protection, community empowerment, agriculture, and environmental action.",
+    "blog_categories_heading": "Categories",
+    "category_all": "All Categories",
+    "category_science": "Education",
+    "category_agriculture": "Health",
+    "category_innovation": "Protection",
+    "category_sustainability": "Environment",
+    "category_water": "Water and Hygiene",
+    "category_climate": "Community Action",
+    "featured_article": "Featured Article",
+    "read_full_article": "Read Full Article",
+    "recent_articles": "Recent Articles",
+    "read_more": "Read More",
+    "close_article": "Close article",
+    "published_on": "Published on",
+    "back_to_articles": "Back to Articles",
+    "blog_biochar_title": "Education as a Pathway Out of Vulnerability",
+    "blog_biochar_excerpt": "AFFE works to make quality instruction accessible to children, young people, and adults affected by exclusion and poverty.",
+    "blog_biochar_content": "Education is central to AFFE's mission. The organization fights mass illiteracy, supports vulnerable children, promotes schools and training centers, and advocates for inclusive, equitable, quality learning throughout life.",
+    "blog_modern_agriculture_title": "Community Health and Access to Care",
+    "blog_modern_agriculture_excerpt": "Supporting primary healthcare, health centers, medical equipment, hygiene, sanitation, and disease prevention.",
+    "blog_modern_agriculture_content": "AFFE promotes access to essential health services for individuals and families, with special attention to women and vulnerable children. Its work includes support for health centers, medical referrals, water, hygiene, sanitation, and prevention of waterborne and nutritional diseases.",
+    "blog_innovation_title": "Protection, Resilience, and Community Empowerment",
+    "blog_innovation_excerpt": "AFFE supports women, children, and communities facing violence, conflict, poverty, and environmental vulnerability.",
+    "blog_innovation_content": "AFFE promotes protection from sexual violence and exploitation, support for people deprived of liberty, community resilience after crises, food security, farmer initiatives, biodiversity protection, and sustainable environmental practices.",
+    "blog_biochar_date": "May 1, 2026",
+    "blog_modern_agriculture_date": "May 1, 2026",
+    "blog_innovation_date": "May 1, 2026",
+    "blog_biochar_read_time": "4 min read",
+    "blog_modern_agriculture_read_time": "4 min read",
+    "blog_innovation_read_time": "5 min read",
+    "loading.title": "Loading AFFE...",
+    "loading.subtitle": "Preparing actions for women and children",
   },
 
   fr: {
-
-    //Contact
+    "followUs": "Suivez-nous",
+    "thank_you_title": "Merci pour votre message !",
+    "thank_you_subtitle": "Nous vous répondrons dès que possible.",
+    "line1": "Actions en Faveur de la Femme et de l'Enfant (AFFE)",
+    "line2": "République démocratique du Congo",
+    "line3": "Téléphone : +243 842 565 659",
+    "line4": "+243 811 496 487 / +243 974 512 343",
+    "prepurchase": "Soutenir nos actions",
     "contacted.hour.monday.label": "Lundi - Vendredi",
     "contacted.hour.monday.value": "8h00 - 17h00",
     "contacted.hour.saturday.label": "Samedi",
@@ -433,202 +279,171 @@ const translations = {
     "contacted.hour.emergency.label": "Urgence",
     "contacted.hour.emergency.value": "Disponible 24h/24 7j/7",
     "contacted.title": "Heures d'ouverture",
-    // Navigation
+
     "nav.home": "Accueil",
     "nav.about": "À Propos",
-    "nav.projects": "Nos Projets",
+    "nav.projects": "Domaines",
     "nav.contact": "Contact",
-    "nav.blog": "Blog",
+    "nav.blog": "Actualités",
 
-    // WhatsApp Chat
     "whatsapp.chat": "Discuter avec nous",
+    "whatsapp.startChat": "Discuter avec AFFE",
+    "whatsapp.chooseOption": "Choisissez un message",
     "chooseOption": "Veuillez choisir une option",
-    "learnMore": " Bonjour Je souhaite en savoir plus sur vos projets",
-    "scheduleMeeting": "Bonjour  Je souhaite planifier une réunion avec votre équipe",
-    "support": "Bonjour  Je souhaite soutenir vos initiatives",
-    // Homepage Hero
-    "hero.title": "Biochar pour la",
-    "hero.subtitle": "Décarbonisation",
-    "hero.description":
-      "Mener la transition de l'Afrique centrale vers une agriculture durable et une résilience climatique grâce à des solutions innovantes de biochar",
-    "hero.projects": "Nos Projets",
-    "hero.learn": "En Savoir Plus",
+    "learnMore": "Bonjour, je souhaite en savoir plus sur AFFE.",
+    "scheduleMeeting": "Bonjour, je souhaite planifier une réunion avec votre équipe.",
+    "support": "Bonjour, je souhaite soutenir vos actions.",
 
-    // Services Section
-    "services.title": "Nos Services Principaux",
-    "services.description":
-      "Solutions complètes pour une agriculture durable, la séquestration du carbone et les énergies renouvelables en République Démocratique du Congo",
-    "services.biochar.title": "Production de Biochar",
-    "services.biochar.description":
-      "Biochar de haute qualité pour la séquestration du carbone, l'amendement des sols et les applications de purification de l'eau.",
-    "services.energy.title": "Énergies Renouvelables",
-    "services.energy.description":
-      "Solutions technologiques propres adaptées aux besoins énergétiques ruraux et au développement durable.",
-    "services.agriculture.title": "Agriculture Régénératrice",
-    "services.agriculture.description":
-      "Pratiques agricoles respectueuses de l'environnement favorisant la santé des sols et la productivité à long terme.",
-    "services.innovation.title": "Innovation Climatique",
-    "services.innovation.description":
-      "Solutions technologiques innovantes pour la résilience climatique et la conservation environnementale.",
+    "hero.title": "Actions en Faveur",
+    "hero.subtitle": "de la Femme et de l'Enfant",
+    "hero.description": missionFr,
+    "hero.projects": "Nos Domaines",
+    "hero.learn": "En savoir plus",
 
-    // About Section
-    "about.title": "À Propos de B4D Sarl",
-    "about.description":
-      "B4D Sarl est une entreprise innovante positionnée à l'intersection de la bioéconomie, de la transition énergétique et de l'agriculture durable. Fondée dans une dynamique de résilience climatique et de développement écologique, nous promouvons des solutions intégrées pour la décarbonisation, la régénération des sols et la sécurité alimentaire en République Démocratique du Congo.",
-    "about.values.innovation": "Innovation",
-    "about.values.responsibility": "Responsabilité Environnementale",
+    "services.title": "Nos Actions Principales",
+    "services.description": "AFFE œuvre pour la dignité, la protection, l'éducation, la santé et l'autonomisation des femmes, des enfants et des communautés vulnérables.",
+    "services.biochar.title": "Éducation",
+    "services.biochar.description": "Accès à une instruction de qualité, alphabétisation, écoles, centres de formation et soutien scolaire pour les enfants et adultes vulnérables.",
+    "services.energy.title": "Santé",
+    "services.energy.description": "Accès aux soins de santé primaires, évacuations médicales, appui aux centres de santé, eau, hygiène, assainissement et prévention.",
+    "services.agriculture.title": "Protection",
+    "services.agriculture.description": "Protection des femmes, des filles, des garçons mineurs, des enfants vulnérables et des personnes privées de liberté.",
+    "services.innovation.title": "Autonomisation",
+    "services.innovation.description": "Mobilisation communautaire, sécurité alimentaire, activités génératrices de revenus, agriculture et résilience locale.",
+
+    "about.title": "À Propos d'AFFE",
+    "about.description": "Actions en Faveur de la Femme et de l'Enfant est une ASBL engagée pour la dignité de la femme, la protection de l'enfant, l'accès aux services essentiels et le développement des communautés.",
+    "about.values.innovation": "Dignité",
+    "about.values.responsibility": "Protection",
     "about.values.inclusion": "Inclusion",
-    "about.values.transparency": "Transparence",
-    "about.learn": "En Savoir Plus Sur Nous",
-
-    //featuredStats
-    "Carbon Sequestered": "Carbone séquestré",
-    "Families Impacted": "Agriculteurs bénéficiaires",
-    "Watch Video Result": "Voir le résultat en vidéo",
-
-    // Blog dates  
-    "blog_biochar_date": "28 août 2025",
-    "blog_modern_agriculture_date": "28 août 2025",
-    "blog_innovation_date": "28 août 2025",
-
-    // Blog read times
-    "blog_biochar_read_time": "8 min de lecture",
-    "blog_modern_agriculture_read_time": "6 min de lecture",
-    "blog_innovation_read_time": "7 min de lecture",
-
-
-    // About Page Specific
-    "about.hero.subtitle":
-      "Pionnier de solutions durables à l'intersection de la bioéconomie, de la transition énergétique et de l'agriculture régénératrice en République Démocratique du Congo.",
-    "about.story.title": "Notre Histoire",
-    "about.story.p1":
-      "B4D Sarl (Biochar pour la Décarbonisation) est une société à responsabilité limitée innovante basée à Lubumbashi, Province du Haut-Katanga, RDC. Fondée dans une dynamique de résilience climatique et de développement écologique, nous promouvons des solutions intégrées pour la décarbonisation, la régénération des sols et la sécurité alimentaire.",
-    "about.story.p2":
-      "Notre entreprise opère à l'intersection de la bioéconomie, de la transition énergétique et de l'agriculture durable, offrant des solutions innovantes et durables dans l'économie verte, particulièrement dans l'agriculture, le reboisement et l'énergie.",
-    "about.legal.title": "Statut Juridique",
-    "about.legal.status": "Société à Responsabilité Limitée (Sarl), RCCM: 25/LSH/IM002548, IDNat: 05-S9502-N82149T",
-    "about.legal.headquarters": "Siège social: Lubumbashi, Province du Haut-Katanga, RDC",
+    "about.values.transparency": "Action communautaire",
+    "about.learn": "En savoir plus sur nous",
+    "about.hero.subtitle": "Œuvrer à un environnement protecteur où la femme et l'enfant peuvent réaliser leur plein potentiel dans tous les aspects de leur vie.",
+    "about.story.title": "Notre Engagement",
+    "about.story.p1": "AFFE milite pour la dignité, la protection, la promotion des droits de la femme et la protection de l'enfant.",
+    "about.story.p2": "L'organisation mobilise les communautés pour le changement de comportement en faveur des femmes et des jeunes filles, tout en facilitant l'accès à l'éducation, l'alimentation, l'habitat, la santé communautaire, l'eau, l'hygiène et l'assainissement.",
+    "about.legal.title": "Organisation",
+    "about.legal.status": "ASBL : Actions en Faveur de la Femme et de l'Enfant (AFFE)",
+    "about.legal.headquarters": "Au service des femmes, des enfants et des communautés vulnérables en République démocratique du Congo.",
     "about.mission.title": "Notre Mission",
-    "about.mission.description":
-      "Fournir des solutions innovantes et durables dans l'économie verte, particulièrement dans l'agriculture, le reboisement et l'énergie, tout en promouvant la résilience climatique et le développement écologique en Afrique centrale.",
+    "about.mission.description": missionFr,
     "about.vision.title": "Notre Vision",
-    "about.vision.description":
-      "Devenir une entreprise leader en agriculture régénératrice et innovation climatique en Afrique centrale, en créant un modèle économique inclusif et durable avec un fort impact environnemental.",
-    "about.values.title": "Nos Valeurs Fondamentales",
-    "about.values.subtitle":
-      "Ces principes fondamentaux guident tous les aspects de notre travail et définissent notre engagement envers le développement durable.",
-    "about.values.innovation.desc":
-      "Développer continuellement des solutions de pointe pour les défis environnementaux grâce à la recherche et à la technologie.",
-    "about.values.responsibility.desc":
-      "Engagés à protéger et restaurer notre planète grâce à des pratiques durables et des solutions à carbone négatif.",
-    "about.values.inclusion.desc":
-      "Construire un modèle économique inclusif qui profite aux communautés locales et promeut l'équité sociale.",
-    "about.values.transparency.desc":
-      "Opérer avec une transparence complète dans nos processus, la mesure d'impact et les communications avec les parties prenantes.",
-    "about.objectives.title": "Objectifs Corporatifs",
-    "about.objectives.subtitle":
-      "Notre approche globale aborde plusieurs aspects du développement durable et de l'action climatique.",
-    "about.objectives.biochar.title": "Biochar et Décarbonisation",
-    "about.objectives.biochar.desc":
-      "Production et valorisation du biochar comme solution pour la séquestration du carbone, l'amendement des sols et la purification de l'eau.",
-    "about.objectives.energy.title": "Énergies Renouvelables",
-    "about.objectives.energy.desc":
-      "Développement et promotion de technologies propres adaptées aux besoins énergétiques ruraux et au développement durable.",
-    "about.objectives.agriculture.title": "Agriculture Régénératrice",
-    "about.objectives.agriculture.desc":
-      "Mise en œuvre de pratiques agricoles respectueuses de l'environnement qui favorisent la santé des sols et la productivité à long terme.",
-    "about.objectives.innovation.title": "Innovation Climatique",
-    "about.objectives.innovation.desc":
-      "Conception et déploiement de solutions technologiques innovantes pour la résilience climatique et la conservation environnementale.",
-    "about.activities.title": "Activités Supplémentaires",
-    "about.activities.agricultural.title": "Opérations Agricoles",
-    "about.activities.agricultural.desc":
-      "Production, transformation, distribution et commercialisation des produits agricoles selon des pratiques durables et régénératives, Production agricole durable, Transformation des produits agricoles, Réseaux de distribution, Développement des marchés",
-    "about.activities.consulting.title": "Services de Conseil",
-    "about.activities.consulting.desc":
-      "Conseil, évaluations et audits de projets bancables liés à l'agriculture durable et à la conservation environnementale.",
-    "about.cta.title": "Rejoignez Notre Mission",
-    "about.cta.description":
-      "Partenaire avec nous pour créer des solutions durables pour l'agriculture, l'énergie et la résilience climatique en Afrique centrale.",
-    "about.cta.contact": "Nous Contacter",
-    "about.cta.projects": "Voir Nos Projets",
+    "about.vision.description": "Œuvrer à un environnement protecteur où la femme et l'enfant peuvent réaliser leur plein potentiel dans tous les aspects de leur vie.",
+    "about.values.title": "Nos Priorités",
+    "about.values.subtitle": "Ces engagements guident l'action d'AFFE en faveur des femmes, des enfants et des communautés.",
+    "about.values.innovation.desc": "Défendre la dignité et promouvoir les droits de la femme et de l'enfant.",
+    "about.values.responsibility.desc": "Protéger les enfants et lutter contre l'abus, l'exploitation sexuelle, les mariages forcés, la mendicité et les vulnérabilités.",
+    "about.values.inclusion.desc": "Ouvrir l'accès aux services essentiels aux groupes marginalisés et vulnérables.",
+    "about.values.transparency.desc": "Mobiliser les communautés pour un changement social durable.",
+    "about.objectives.title": "Objectifs",
+    "about.objectives.subtitle": "Les objectifs d'AFFE associent protection, accès aux services de base et transformation communautaire.",
+    "about.objectives.biochar.title": "Droits et protection",
+    "about.objectives.biochar.desc": "Militer pour la dignité, assurer la protection et la promotion des droits de la femme et la protection de l'enfant.",
+    "about.objectives.energy.title": "Services de base",
+    "about.objectives.energy.desc": "Faciliter l'accès des enfants vulnérables à l'éducation, l'alimentation, l'habitat, la santé communautaire, l'eau, l'hygiène et l'assainissement.",
+    "about.objectives.agriculture.title": "Lutte contre les abus",
+    "about.objectives.agriculture.desc": "Lutter contre l'abus et l'exploitation sexuelle des filles et garçons mineurs, la mendicité, le racolage et les mariages forcés.",
+    "about.objectives.innovation.title": "Changement de comportement",
+    "about.objectives.innovation.desc": "Mobiliser les communautés pour le changement de comportement en faveur des femmes et des jeunes filles.",
+    "about.activities.title": "Domaines d'intervention",
+    "about.activities.agricultural.title": "Éducation et santé",
+    "about.activities.agricultural.desc": "Lutte contre l'analphabétisme, éducation inclusive, centres de formation, appui scolaire, soins de santé primaires, évacuations médicales, centres de santé, eau, hygiène et assainissement.",
+    "about.activities.consulting.title": "Protection, agriculture et environnement",
+    "about.activities.consulting.desc": "Protection contre les violences, résilience communautaire, sécurité alimentaire, appui aux organisations paysannes, agriculture durable, biodiversité, gestion des déchets et plaidoyer environnemental.",
+    "about.cta.title": "Rejoignez notre mission",
+    "about.cta.description": "Associez-vous à AFFE pour protéger les femmes, soutenir les enfants et renforcer les communautés vulnérables.",
+    "about.cta.contact": "Nous contacter",
+    "about.cta.projects": "Voir nos domaines",
 
-    // Process Section
-    "process.title": "Notre Processus de Biochar",
-    "process.description":
-      "De la biomasse brute au biochar de haute qualité, notre processus de production durable transforme les déchets agricoles en solutions précieuses à carbone négatif.",
-    "process.materials.title": "1. Matières Premières",
-    "process.materials.description":
-      "Nous nous approvisionnons en biomasse durable, notamment le bambou, les résidus agricoles et les matières organiques.",
-    "process.pyrolysis.title": "2. Processus de Pyrolyse",
-    "process.pyrolysis.description":
-      "Notre processus de pyrolyse contrôlée convertit la biomasse en biochar tout en capturant et utilisant les gaz sous-produits.",
-    "process.quality.title": "3. Biochar de Qualité",
-    "process.quality.description":
-      "Le produit final est un biochar de haute qualité prêt pour l'amendement des sols, la séquestration du carbone et la filtration de l'eau.",
+    "process.title": "Notre Méthode d'Action",
+    "process.description": "AFFE agit à travers des programmes communautaires qui identifient les besoins, renforcent les capacités et soutiennent un changement durable.",
+    "process.materials.title": "1. Identifier les besoins",
+    "process.materials.description": "Nous écoutons les femmes, les enfants, les écoles, les centres de santé et les communautés afin de comprendre les priorités urgentes.",
+    "process.pyrolysis.title": "2. Mobiliser les soutiens",
+    "process.pyrolysis.description": "Nous construisons des partenariats, mobilisons les communautés et apportons un soutien concret par des initiatives locales.",
+    "process.quality.title": "3. Renforcer les communautés",
+    "process.quality.description": "Nous promouvons la résilience, l'éducation, la santé, la protection, l'agriculture durable et la responsabilité environnementale.",
 
-    // CTA Section
-    "cta.title": "Prêt à Vous Associer avec Nous?",
-    "cta.description":
-      "Rejoignez-nous pour créer des solutions durables pour l'agriculture, l'énergie et la résilience climatique en Afrique centrale.",
-    "cta.contact": "Nous Contacter",
-    "cta.projects": "Voir les Projets",
+    "cta.title": "Prêt à soutenir AFFE ?",
+    "cta.description": "Ensemble, protégeons la dignité et bâtissons un meilleur avenir pour les femmes et les enfants.",
+    "cta.contact": "Nous contacter",
+    "cta.projects": "Voir les domaines",
 
-    // Footer
-    "footer.description":
-      "Mener la transition de l'Afrique centrale vers une agriculture durable et une résilience climatique.",
-    "footer.contact": "Informations de Contact",
-    "footer.links": "Liens Rapides",
-    "footer.copyright": "© 2024 B4D Sarl. Tous droits réservés.",
+    "footer.description": "Actions pour la dignité, la protection et l'autonomisation des femmes et des enfants.",
+    "footer.contact": "Informations de contact",
+    "footer.links": "Liens rapides",
+    "footer.copyright": "© 2026 AFFE. Tous droits réservés.",
 
-    // Projects Page
-    "projects.title": "Nos Projets",
-    "projects.subtitle":
-      "Transformer les communautés grâce à des solutions innovantes de biochar et des initiatives de développement durable à travers l'Afrique centrale.",
-    "projects.featured.title": "Projet Vedette",
-    "projects.featured.name": "Centre de Production Communautaire de Biochar",
-    "projects.featured.description":
-      "Une installation complète de production de biochar desservant 15 communautés rurales, convertissant les déchets agricoles en amendements de sol précieux tout en fournissant des solutions d'énergie propre.",
-    "projects.featured.impact": "Impact: 500+ agriculteurs bénéficiaires, 2 000 tonnes de CO2 séquestrées annuellement",
-    "projects.featured.learn": "En Savoir Plus",
-    "projects.grid.title": "Portefeuille de Projets",
+    "impact_heading": "Notre Impact",
+    "impact_description": "Bâtir des avenirs plus solides grâce à l'éducation, la santé, la protection et l'autonomisation communautaire.",
+    "impact_carbon": "Femmes et enfants soutenus",
+    "impact_farmers": "Membres de communautés atteints",
+    "impact_hectares": "Initiatives locales",
+    "impact_projects": "Domaines d'intervention",
+
+    "projects.title": "Nos Domaines d'Intervention",
+    "projects.subtitle": "AFFE agit dans l'éducation, la santé, la protection, l'autonomisation, l'agriculture durable et l'environnement.",
+    "projects.featured.title": "Domaine vedette",
+    "projects.featured.name": "Protection et autonomisation des femmes et des enfants",
+    "projects.featured.description": "AFFE promeut la dignité, la protection contre les violences et l'exploitation, l'accès aux services essentiels et l'autonomisation des communautés vulnérables.",
+    "projects.grid.title": "Portefeuille d'intervention",
     "projects.impact.title": "Notre Impact",
-    "projects.impact.communities": "Communautés Servies",
-    "projects.impact.carbon": "CO2 Séquestré (tonnes/an)",
-    "projects.impact.farmers": "Agriculteurs Bénéficiaires",
-    "projects.impact.biochar": "Biochar Produit (tonnes)",
+    "projects.impact.communities": "Communautés servies",
+    "projects.impact.carbon": "Personnes atteintes",
+    "projects.impact.farmers": "Femmes soutenues",
+    "projects.impact.biochar": "Actions réalisées",
+    "status_active": "Actif",
+    "status_pilot": "Prioritaire",
+    "status_development": "En développement",
+    "status_ongoing": "En cours",
+    "project_bamboo_title": "Éducation",
+    "project_bamboo_desc": "Lutter contre l'analphabétisme, appuyer les écoles, créer des centres de formation et rendre l'éducation accessible aux enfants et adultes vulnérables.",
+    "project_cash_title": "Santé",
+    "project_cash_desc": "Soutenir les soins de santé primaires, les évacuations pour cas difficiles, les centres de santé, les équipements médicaux, l'eau, l'hygiène et l'assainissement.",
+    "project_maize_title": "Protection",
+    "project_maize_desc": "Défendre les femmes, les filles, les garçons mineurs, les enfants vulnérables et les personnes privées de liberté contre les violences, l'exploitation et les abus.",
+    "project_soil_title": "Résilience communautaire",
+    "project_soil_desc": "Soutenir les communautés victimes de conflits, crises humanitaires et catastrophes naturelles par l'aide d'urgence et la réhabilitation des infrastructures de base.",
+    "project_water_title": "Sécurité alimentaire et agriculture",
+    "project_water_desc": "Développer des stratégies de sécurité alimentaire, nutrition, appui paysan, intrants, activités génératrices de revenus et commercialisation des produits agricoles.",
+    "project_training_title": "Environnement durable",
+    "project_training_desc": "Protéger la biodiversité, lutter contre la déforestation et la pollution, améliorer la gestion des déchets, promouvoir l'hygiène et soutenir l'élevage.",
+    "partner_heading": "Devenir partenaire d'AFFE",
+    "partner_description": "Rejoignez-nous pour développer les actions de protection, d'éducation, de santé et d'autonomisation en faveur des femmes et des enfants.",
+    "partner_button": "Devenir partenaire",
+    "Carbon Sequestered": "Personnes atteintes",
+    "Families Impacted": "Familles soutenues",
+    "Watch Video Result": "Voir la vidéo",
 
-    // Contact Page
-    "contact.title": "Nous Contacter",
-    "contact.subtitle":
-      "Prêt à vous associer avec nous pour créer des solutions durables pour l'Afrique centrale? Contactez notre équipe.",
-    "contact.getInTouch": "Entrer en Contact",
-    "contact.office.title": "Adresse du Bureau",
+    "contact.title": "Nous contacter",
+    "contact.subtitle": "Contactez AFFE pour soutenir nos actions ou en savoir plus sur notre travail.",
+    "contact.getInTouch": "Entrer en contact",
+    "contact.office.title": "Organisation",
     "contact.phone.title": "Téléphone",
-    "contact.email.title": "Email",
+    "contact.email.title": "WhatsApp",
     "contact.website.title": "Site Web",
-    "contact.form.title": "Envoyez-nous un Message",
+    "contact.form.title": "Envoyez-nous un message",
     "contact.form.firstName": "Prénom",
-    "contact.form.lastName": "Nom de Famille",
+    "contact.form.lastName": "Nom",
     "contact.form.firstName.placeholder": "Votre prénom",
-    "contact.form.lastName.placeholder": "Votre nom de famille",
-    "contact.form.name": "Nom Complet",
-    "contact.form.email": "Adresse Email",
+    "contact.form.lastName.placeholder": "Votre nom",
+    "contact.form.name": "Nom complet",
+    "contact.form.email": "Adresse email",
     "contact.form.email.placeholder": "votre.email@exemple.com",
-    "contact.form.phone": "Numéro de Téléphone",
+    "contact.form.phone": "Numéro de téléphone",
     "contact.form.phone.placeholder": "+243 XXX XXX XXX",
     "contact.form.subject": "Sujet",
     "contact.form.subject.placeholder": "Sélectionnez un sujet",
-    "contact.form.subject.partnership": "Opportunités de Partenariat",
-    "contact.form.subject.biochar": "Produits et Services Biochar",
-    "contact.form.subject.consulting": "Services de Conseil",
-    "contact.form.subject.projects": "Collaboration de Projet",
-    "contact.form.subject.investment": "Opportunités d'Investissement",
-    "contact.form.subject.other": "Autre Demande",
+    "contact.form.subject.partnership": "Opportunités de partenariat",
+    "contact.form.subject.biochar": "Éducation et santé",
+    "contact.form.subject.consulting": "Protection et autonomisation",
+    "contact.form.subject.projects": "Programmes communautaires",
+    "contact.form.subject.investment": "Soutien et dons",
+    "contact.form.subject.other": "Autre demande",
     "contact.form.message": "Message",
-    "contact.form.message.placeholder": "Parlez-nous de votre projet ou demande...",
-    "contact.form.send": "Envoyer le Message",
-    "contact.hours.title": "Heures d'Ouverture",
+    "contact.form.message.placeholder": "Dites-nous comment vous souhaitez soutenir ou contacter AFFE...",
+    "contact.form.send": "Envoyer le message",
+    "contact.hours.title": "Heures d'ouverture",
     "contact.hours.weekdays": "8h00 - 17h00",
     "contact.hours.saturday": "9h00 - 12h00",
     "contact.hours.sunday": "Fermé",
@@ -637,171 +452,31 @@ const translations = {
     "contact.hours.saturday.label": "Samedi",
     "contact.hours.sunday.label": "Dimanche",
     "contact.hours.emergency.label": "Urgence",
-    "contact.cta.title": "Prêt à Faire un Impact?",
-    "contact.cta.description":
-      "Que vous soyez intéressé par nos produits biochar, services de conseil ou opportunités de partenariat, nous sommes là pour vous aider à atteindre vos objectifs de durabilité.",
-    "contact.cta.schedule": "Planifier un Appel",
-    "contact.cta.brochure": "Télécharger la Brochure",
-    "contact.why.title": "Pourquoi S'Associer avec B4D?",
-    "contact.why.subtitle":
-      "Rejoignez-nous pour créer des solutions durables qui profitent à la fois à l'environnement et aux communautés locales.",
-    "contact.why.expertise": "Expertise Prouvée",
-    "contact.why.expertise.desc":
-      "Des années d'expérience dans la production de biochar et les solutions d'agriculture durable.",
-    "contact.why.impact": "Impact Mesurable",
-    "contact.why.impact.desc":
-      "Historique de projets réussis avec des bénéfices environnementaux et sociaux quantifiables.",
-    "contact.why.local": "Connaissance Locale",
-    "contact.why.local.desc":
-      "Compréhension approfondie des défis agricoles de l'Afrique centrale et des besoins communautaires.",
+    "contact.cta.title": "Prêt à avoir un impact ?",
+    "contact.cta.description": "Que vous souhaitiez soutenir les femmes, les enfants, l'éducation, la santé, la protection ou le développement communautaire, AFFE est prête à collaborer.",
+    "contact.cta.schedule": "Planifier un appel",
+    "contact.cta.brochure": "Télécharger la brochure",
+    "contact.why.title": "Pourquoi s'associer à AFFE ?",
+    "contact.why.subtitle": "Rejoignez des actions qui protègent la dignité et renforcent les communautés.",
+    "contact.why.expertise": "Engagement communautaire",
+    "contact.why.expertise.desc": "Une mission ancrée dans l'autonomisation de la femme, la protection de l'enfant et l'accès aux services essentiels.",
+    "contact.why.impact": "Impact humain",
+    "contact.why.impact.desc": "Des programmes axés sur l'éducation, la santé, la résilience et la protection sociale.",
+    "contact.why.local": "Action locale",
+    "contact.why.local.desc": "Une mobilisation communautaire pour un changement concret et durable.",
 
-    // Blog Page
-    "blog.title": "Blog et Perspectives",
-    "blog.subtitle":
-      "Restez informé des derniers développements en technologie biochar, agriculture durable et solutions climatiques.",
-    "blog.featured.title": "Article Vedette",
-    "blog.categories.title": "Catégories",
-    "blog.recent.title": "Articles Récents",
-    "blog.read": "Lire Plus",
-    "blog.category.all": "Tous",
-    "blog.category.science": "Science",
-    "blog.category.agriculture": "Agriculture",
-    "blog.category.innovation": "Innovation",
-    "blog.category.sustainability": "Durabilité",
-    "blog.category.water": "Traitement de l'Eau",
-    "blog.category.climate": "Climat",
-    //message
-    "thank_you_title": "Merci pour votre message !",
-    "thank_you_subtitle": "Nous vous répondrons dès que possible.",
-    //followUs
-    "followUs": "Suivez-nous",
-
-    // Blog Post Translations
-    "blog.posts.1.title": "La Science Derrière le Biochar: Comment la Pyrolyse Crée des Solutions Carbone-Négatives",
-    "blog.posts.1.excerpt":
-      "Découvrez le processus fascinant de pyrolyse et comment il transforme les déchets agricoles en biochar précieux qui élimine activement le CO2 de l'atmosphère.",
-    "blog.posts.1.author": "Dr. Jean-Baptiste Mukendi",
-    "blog.posts.1.date": "15 décembre 2024",
-    "blog.posts.1.readTime": "8 min de lecture",
-
-    "blog.posts.2.title": "Transformer l'Agriculture en RDC: Histoires de Succès des Communautés Rurales",
-    "blog.posts.2.excerpt":
-      "Apprenez comment l'application de biochar a amélioré les rendements des cultures et la santé des sols dans les communautés agricoles de la Province du Haut-Katanga.",
-    "blog.posts.2.author": "Marie Kabongo",
-    "blog.posts.2.date": "10 décembre 2024",
-    "blog.posts.2.readTime": "6 min de lecture",
-
-    "blog.posts.3.title": "Du Déchet à la Merveille: Convertir les Plantes Tithonia en Biochar Précieux",
-    "blog.posts.3.excerpt":
-      "Comment nous transformons les plantes invasives Tithonia en une solution durable pour l'amélioration des sols et la séquestration du carbone.",
-    "blog.posts.3.author": "Paul Mwamba",
-    "blog.posts.3.date": "5 décembre 2024",
-    "blog.posts.3.readTime": "5 min de lecture",
-
-    "blog.posts.4.title": "Biochar de Bambou: L'Avenir de la Séquestration Durable du Carbone",
-    "blog.posts.4.excerpt":
-      "Explorer le potentiel du bambou comme matière première renouvelable pour la production de biochar et ses bénéfices environnementaux.",
-    "blog.posts.4.author": "Dr. Jean-Baptiste Mukendi",
-    "blog.posts.4.date": "28 novembre 2024",
-    "blog.posts.4.readTime": "7 min de lecture",
-
-    "blog.posts.5.title": "Purification de l'Eau avec le Biochar: Solutions Propres pour les Communautés Rurales",
-    "blog.posts.5.excerpt":
-      "Comment les systèmes de filtration à base de biochar fournissent de l'eau potable propre tout en soutenant les économies locales.",
-    "blog.posts.5.author": "Sarah Kalombo",
-    "blog.posts.5.date": "20 novembre 2024",
-    "blog.posts.5.readTime": "4 min de lecture",
-
-    "blog.posts.6.title": "Action Climatique en Afrique Centrale: Le Rôle de B4D dans l'Économie Verte",
-    "blog.posts.6.excerpt":
-      "Comprendre comment la production de biochar contribue à la résilience climatique et au développement durable en RDC.",
-    "blog.posts.6.author": "Marie Kabongo",
-    "blog.posts.6.date": "15 novembre 2024",
-    "blog.posts.6.readTime": "9 min de lecture",
-
-    //Project Portfolio
-
-    "status_active": "Actif",
-    "status_pilot": "Pilote",
-    "status_development": "En développement",
-    "status_ongoing": "En cours",
-
-    "project_bamboo_title": "Projet de régénération du bambou Shimbala",
-    "project_bamboo_desc": "Nous protégeons les forêts de Miombo en régénérant le bambou Shimbala et en produisant du biochar et des éco-briquettes comme alternatives au charbon de bois et au bois de chauffe.",
-
-    "project_cash_title": "Projet de plantation de cultures de rente",
-    "project_cash_desc": "Nous plantons des cultures de rente telles que le moringa oleifera, le café robusta, l’avocat, le cacao et le palmier à huile..",
-
-    "project_maize_title": "Culture de maïs et de soja",
-    "project_maize_desc": "Nous menons un projet dans le village de Mwawa, situé dans la province du Haut-Katanga en République Démocratique du Congo (RDC).",
-
-    "project_soil_title": "Programme de restauration des sols",
-    "project_soil_desc": "Nous appliquons du biochar à grande échelle sur des terres agricoles dégradées, afin d’améliorer la fertilité des sols et les rendements des cultures tout en capturant et stockant le carbone.",
-
-    "project_water_title": "Systèmes de purification de l’eau",
-    "project_water_desc": "Nous mettons en place des systèmes de filtration de l’eau à base de biochar pour fournir de l’eau potable aux communautés rurales tout en valorisant notre production de biochar.",
-
-    "project_training_title": "Programme de formation communautaire",
-    "project_training_desc": "Nous proposons des programmes de formation complets qui enseignent aux communautés locales les techniques de production de biochar et les pratiques agricoles durables.",
-
-
-    // Newsletter and CTA Section Translations
-    "blog.newsletter.title": "Restez Informé",
-    "blog.newsletter.description":
-      "Abonnez-vous à notre newsletter pour les dernières perspectives sur la technologie biochar, la durabilité et l'action climatique.",
-    "blog.newsletter.placeholder": "Entrez votre adresse email",
-    "blog.newsletter.subscribe": "S'abonner",
-    "blog.newsletter.disclaimer": "Pas de spam, désabonnez-vous à tout moment.",
-
-    "blog.cta.title": "Partagez Votre Histoire",
-    "blog.cta.description":
-      "Avez-vous une histoire de succès biochar ou des résultats de recherche à partager? Nous aimerions présenter votre travail sur notre blog.",
-    "blog.cta.submit": "Soumettre un Article",
-    "blog.cta.contact": "Contacter l'Équipe Éditoriale",
-
-    // Loading Screen
-    "loading.title": "Chargement des Solutions B4D...",
-    "loading.subtitle": "Préparation des innovations biochar durables pour l'Afrique centrale",
-    //Partner with Our Projects
-    "partner_heading": "Partenariat avec nos projets",
-    "partner_description": "Rejoignez-nous pour développer des solutions durables de biochar en Afrique centrale. Ensemble, nous pouvons créer un impact environnemental et social durable.",
-    "partner_button": "Devenir partenaire",
-
-    //Our Impact
-    "impact_heading": "Notre Impact",
-    "impact_description": "Mesurer notre réussite à travers des résultats environnementaux et sociaux concrets.",
-    "impact_carbon": "Tonnes de carbone réduites",
-    "impact_farmers": "Agriculteurs bénéficiaires",
-    "impact_hectares": "Hectares améliorés",
-    "impact_projects": "Projets actifs",
-
-    // whatsapp.startChat
-    "whatsapp.startChat": "Commencer le chat",
-    "whatsapp.chooseOption": "Choisissez une option",
-
-    //prepurchase
-
-    "prepurchase": "Pré-acheter des Crédits de Suppression de Carbone",
-
-
-    //address
-
-    "line1": "Parcelle n° 38, Avenue Dominique",
-    "line2": "Quartier Kashamata, Commune Annexe",
-    "line3": "Ville de Lubumbashi",
-    "line4": "Province du Haut-Katanga, RDC",
-
-
-    "blog_heading": "Notre Blog & Ressources",
-    "blog_description": "Restez informé des dernières avancées en technologie du biochar, agriculture durable et récits d'impact environnemental issus de nos projets à travers l'Afrique centrale.",
-    "blog_categories_heading": "Catégories de Blog",
+    "blog.title": "Actualités",
+    "blog.subtitle": "Nouvelles des actions d'AFFE auprès des femmes, des enfants et des communautés.",
+    "blog_heading": "Actualités & Ressources",
+    "blog_description": "Récits et mises à jour sur l'éducation, la santé, la protection, l'autonomisation communautaire, l'agriculture et l'environnement.",
+    "blog_categories_heading": "Catégories",
     "category_all": "Toutes les catégories",
-    "category_science": "Science & Recherche",
-    "category_agriculture": "Agriculture",
-    "category_innovation": "Innovation",
-    "category_sustainability": "Durabilité",
-    "category_water": "Traitement de l'eau",
-    "category_climate": "Action climatique",
+    "category_science": "Éducation",
+    "category_agriculture": "Santé",
+    "category_innovation": "Protection",
+    "category_sustainability": "Environnement",
+    "category_water": "Eau et hygiène",
+    "category_climate": "Action communautaire",
     "featured_article": "Article en vedette",
     "read_full_article": "Lire l'article complet",
     "recent_articles": "Articles récents",
@@ -809,32 +484,32 @@ const translations = {
     "close_article": "Fermer l'article",
     "published_on": "Publié le",
     "back_to_articles": "Retour aux articles",
-    "blog_biochar_title": "Comprendre le Biochar : La solution riche en carbone pour une agriculture durable",
-    "blog_biochar_excerpt": "Découvrez comment le biochar révolutionne les pratiques agricoles et contribue à la lutte contre le changement climatique grâce à des techniques innovantes d'amélioration des sols.",
-    "blog_biochar_content": "Le biochar est un matériau très stable et riche en carbone produit par pyrolyse. Il améliore la fertilité des sols, retient l'eau, favorise les micro-organismes bénéfiques et séquestre le carbone pour un impact climatique durable. Les agriculteurs l'adoptent dans le cadre de l'agriculture régénératrice à travers le monde.",
-    "blog_modern_agriculture_title": "Agriculture moderne : Nourrir le monde de manière durable",
-    "blog_modern_agriculture_excerpt": "Découvrez comment les techniques agricoles innovantes répondent aux besoins alimentaires mondiaux tout en protégeant notre environnement pour les générations futures.",
-    "blog_modern_agriculture_content": "L'agriculture moderne vise à maximiser les rendements tout en préservant la santé des sols. Des techniques comme la rotation des cultures, l'association de cultures, l'irrigation de précision et les pratiques durables améliorent la productivité et la protection de l'environnement pour assurer la sécurité alimentaire à long terme.",
-    "blog_innovation_title": "Innovation en agriculture : La technologie rencontre la tradition",
-    "blog_innovation_excerpt": "Comment les technologies de pointe transforment les méthodes agricoles traditionnelles pour créer des pratiques plus efficaces et durables.",
-    "blog_innovation_content": "L'innovation agricole intègre des variétés de cultures avancées, des machines modernes et des outils numériques. Cela améliore l'efficacité, la résilience et la durabilité tout en réduisant l'impact environnemental, permettant aux exploitations de prospérer malgré les défis climatiques et économiques."
-
-
+    "blog_biochar_title": "L'éducation comme voie de sortie de la vulnérabilité",
+    "blog_biochar_excerpt": "AFFE œuvre pour rendre une instruction de qualité accessible aux enfants, jeunes et adultes touchés par l'exclusion et la pauvreté.",
+    "blog_biochar_content": "L'éducation est au cœur de la mission d'AFFE. L'organisation lutte contre l'analphabétisme de masse, soutient les enfants vulnérables, promeut les écoles et centres de formation, et plaide pour une éducation inclusive, équitable et de qualité tout au long de la vie.",
+    "blog_modern_agriculture_title": "Santé communautaire et accès aux soins",
+    "blog_modern_agriculture_excerpt": "Appui aux soins de santé primaires, aux centres de santé, aux équipements médicaux, à l'hygiène, à l'assainissement et à la prévention.",
+    "blog_modern_agriculture_content": "AFFE favorise l'accès des individus et des familles aux soins essentiels, avec une attention particulière aux femmes et aux enfants vulnérables. Son action inclut l'appui aux centres de santé, les évacuations médicales, l'eau, l'hygiène, l'assainissement et la prévention des maladies hydriques et nutritionnelles.",
+    "blog_innovation_title": "Protection, résilience et autonomisation",
+    "blog_innovation_excerpt": "AFFE soutient les femmes, les enfants et les communautés confrontés aux violences, conflits, pauvreté et vulnérabilités environnementales.",
+    "blog_innovation_content": "AFFE promeut la protection contre les violences et l'exploitation sexuelle, l'assistance aux personnes privées de liberté, la résilience communautaire après les crises, la sécurité alimentaire, les initiatives paysannes, la protection de la biodiversité et les pratiques environnementales durables.",
+    "blog_biochar_date": "1 mai 2026",
+    "blog_modern_agriculture_date": "1 mai 2026",
+    "blog_innovation_date": "1 mai 2026",
+    "blog_biochar_read_time": "4 min de lecture",
+    "blog_modern_agriculture_read_time": "4 min de lecture",
+    "blog_innovation_read_time": "5 min de lecture",
+    "loading.title": "Chargement d'AFFE...",
+    "loading.subtitle": "Préparation des actions en faveur des femmes et des enfants",
   },
 }
 
-// Browser language detection function
 function detectBrowserLanguage(): Language {
   if (typeof window === "undefined") return "en"
 
   const browserLang = navigator.language.toLowerCase()
+  if (browserLang.startsWith("fr")) return "fr"
 
-  // Check for French variants (fr, fr-FR, fr-CA, etc.)
-  if (browserLang.startsWith("fr")) {
-    return "fr"
-  }
-
-  // Default to English
   return "en"
 }
 
@@ -842,11 +517,9 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>("en")
 
   useEffect(() => {
-    const detectedLang = detectBrowserLanguage()
-    setLanguage(detectedLang)
+    setLanguage(detectBrowserLanguage())
   }, [])
 
-  // Translation function
   const t = (key: string): string => {
     return translations[language][key as keyof (typeof translations)["en"]] || key
   }

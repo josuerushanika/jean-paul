@@ -15,7 +15,7 @@ export default function WhatsAppChat() {
   const [isOpen, setIsOpen] = useState(false);
   const dialogRef = useRef<HTMLDivElement>(null);
 
-  const PHONE_NUMBER = "243816055692";
+  const PHONE_NUMBER = "243811496487";
 
   const messageOptions: MessageOption[] = [
     { key: "learnMore", translationKey: "learnMore", message: "I want to learn more about your projects." },

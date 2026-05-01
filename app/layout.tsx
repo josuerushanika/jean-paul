@@ -18,11 +18,11 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "B4D - Biochar for Decarbonization",
-  description: "Leading the way in sustainable carbon solutions through innovative biochar technology",
+  title: "AFFE - Actions en Faveur de la Femme et de l'Enfant",
+  description: "Actions pour la dignité, la protection et l'autonomisation des femmes et des enfants.",
   icons: {
-    icon: "/logobiochar.png",       // path to your favicon file
-    apple: "/logobiochar.png", // optional, for Apple devices
+    icon: "/affe_logo.jpeg",
+    apple: "/affe_logo.jpeg",
   },
 };
 

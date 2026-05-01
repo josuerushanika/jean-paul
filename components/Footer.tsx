@@ -10,12 +10,6 @@ export default function Footer() {
 
     const socialLinks = [
         {
-            name: "LinkedIn",
-            href: "https://www.linkedin.com/company/b4d-sarl/",
-            icon: "/images/LinkedIn.png",
-            color: "hover:text-blue-600"
-        },
-        {
             name: "Facebook",
             href: "https://web.facebook.com/profile.php?id=61580434651179",
             icon: "/images/fb.png",
@@ -32,8 +26,8 @@ export default function Footer() {
                     {/* Logo & Description */}
                     <div>
                         <Image
-                            src="/logobiochar.png"
-                            alt="B4D Logo"
+                            src="/affe_logo.jpeg"
+                            alt="AFFE Logo"
                             width={200}
                             height={80}
                             className="mb-4"
@@ -117,7 +111,7 @@ export default function Footer() {
                 {/* Bottom Copyright */}
                 <div className="border-t border-gray-800 mt-8 pt-6 px-4">
                     <p className="text-center text-sm sm:text-base text-gray-400">
-                        © {new Date().getFullYear()} B4D Sarl
+                        © {new Date().getFullYear()} AFFE
                     </p>
                 </div>
             </div>
