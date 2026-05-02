@@ -48,7 +48,7 @@ export default function Projects() {
 
   const projects = [
     {
-      image: "/images/affe3.jpeg",
+      image: "/images/affe15.png",
       alt: "AFFE education action",
       category: { label: "Education", color: "green" },
       title: t("project_bamboo_title"),

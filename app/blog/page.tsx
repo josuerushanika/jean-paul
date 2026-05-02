@@ -32,7 +32,7 @@ export default function Blog() {
       dateKey: "blog_biochar_date",
       readTimeKey: "blog_biochar_read_time",
       categoryKey: "category_science",
-      image: "/images/affe13.jpeg",
+      image: "/images/affe15.png",
       featured: true,
     },
     {
@@ -53,7 +53,7 @@ export default function Blog() {
       dateKey: "blog_innovation_date",
       readTimeKey: "blog_innovation_read_time",
       categoryKey: "category_innovation",
-      image: "/images/affe15.png",
+      image: "/images/affe5.jpeg",
     },
   ];
 
